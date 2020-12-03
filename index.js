@@ -12,8 +12,7 @@ function findMatching(drivers, name) {
 
 function fuzzyMatch(drivers, string) {
   return drivers.filter((driver) => {
-    const drvr = driver.toLowerCase;
-    return drvr.startsWith(string.toLowerCase);
+    return driver.toLowerCase().startsWith(string.toLowerCase());
   });
 }
 
